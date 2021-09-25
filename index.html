@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .main_box{
+            border: 1px solid black;
+            font-family:'Times New Roman', Times, serif ;
+            font-size: 20px;
+            padding:50px 0px;
+        }
+        .container{
+            border: 1px solid black;
+        }
+       span{
+           color:red;
+       }
+       input[type="radio"] {
+           transform:scale(1.3);
+       }
+       
+       .p_margin{
+           
+           margin:0px;
+           
+       }
+       .row_margin{
+           
+           margin:auto;
+           
+           border-radius: 5px;
+           padding:5px 0px;
+           
+       }
+       .row_color{
+        background-color:rgb(221, 219, 219);
+       }
+       .align_center{
+           text-align:center;
+         
+       }
+       .for_radio_center{
+           padding:10px;
+       }
+       .top_margin{
+           margin-top:20px;
+       }
+       .col_padding{
+           padding-left: 10px;
+       }
+       i{
+           color:orange;
+       }
+       button{
+           height:50px;
+           width:100px;
+           font-size:25px ;
+       }
+       #feedback{
+           font-size: 22px;
+       }
+    </style>
+</head>
+<body>
+    <div class="main_box">
+        <div class="container">
+            <form>
+            
+            <div class="row ">
+                <div class="col-12 " >
+                    <p class="p_margin"><b>Name</b><span> *</span></p>
+                </div>
+                <div class="col-4 ">
+                    <input class="form-control" type="text">
+                    <p>First</p>
+                </div>
+                <div class="col-4 ">
+                    <input class="form-control" type="text">
+                    <p >Last</p>
+                </div>
+                <div class="col-12 ">
+                    <lable for="email" class="p_margin"><b>Email</b><span> *</span></lable>
+                    
+                </div>
+                <div class="col-12 ">
+                    <input class="form-control"type="text" id="email" size="49">
+                </div>
+                <div class="col-12 ">
+                    <p class="p_margin top_margin"><b>Your Experience</b><span> *</span></p>
+                    <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                    <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                    <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                    <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                    <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                </div>
+                <div class="col-12 top_margin">
+                    <p >Overall, how would you rate you experience with us?</p>
+                </div>
+            </div>
+            <div class="row " style="min-height: 60px;">
+                <div class="col-12"><p class="p_margin"><b>How satisfied you are?</b><span> *</span></p></div>
+                <div class="col-md-2 col-lg-2 col-sm-2"><p class="p_margin "></div>
+                <div class="col-2 align_center "><p class="p_margin " >Very Unsatisfied</p></div>
+                <div class="col-2 align_center "><p class="p_margin">Unsatisfied</p></div>
+                <div class="col-2 align_center"><p class="p_margin">Normal</p></div>
+                <div class="col-2 align_center"><p class="p_margin">Satisfied</p></div>
+                <div class="col-2 align_center"><p class="p_margin">very Satisfied</p></div>
+               
+            </div> 
+            <div class="row row_margin row_color ">
+                <div class="col-md-2 col-lg-2 col-sm-2  col_padding">
+                    <p class="p_margin ">Purchase</p>
+                </div>
+                <div class="col-2 align_center " >
+                    <p class="p_margin ">
+                        <input  type="radio" name="purchase" id="" value="very unsatisfied"><lable for="very unsatisfied"></lable>
+                    </p>
+                </div>
+                <div class="col-2 align_center " >
+                    <p class="p_margin ">
+                        <input  type="radio" name="purchase" id="" value="unsatisfied"><lable for=" unsatisfied"></lable>
+                    </p>
+                </div>
+                <div class="col-2 align_center" >
+                    <p class="p_margin"> 
+                        <input   type="radio" name="purchase" id="" value="normal"><lable for="normal"></lable>
+                    </p>
+                </div>
+                <div  class="col-2 align_center" >
+                    <p class="p_margin">  
+                        <input  type="radio" name="purchase" id="" value="satisfied"><lable for="satisfied"></lable>
+                    </p>
+                </div>    
+                <div  class="col-2 align_center" >
+                    <p class="p_margin">    
+                        <input  type="radio" name="purchase" id="" value="satisfied"><lable for="satisfied"></lable>
+                    </p>
+                </div>          
+            </div>
+            <div class="row row_margin">
+                <div class="col-md-2 col-lg-2 col-sm-2 col_padding">
+                    <p class="p_margin">Service</p>
+                </div>
+                <div class="col-2 align_center" >
+                    <p class="p_margin">     
+                        <input  type="radio" name="service" id="" value="very unsatisfied" size=""><lable for="very unsatisfied"></lable>
+                    </p>
+                </div>
+                <div class="col-2 align_center" >
+                    <p class="p_margin">
+                        <input  type="radio" name="service" id="" value="unsatisfied"><lable for=" unsatisfied"></lable>
+                    </p>
+                </div>
+                <div class="col-2 align_center" >
+                    <p class="p_margin"> 
+                        <input type="radio" name="service" id="" value="normal"><lable for="normal"></lable>
+                    </p>
+                </div>
+                    <div class="col-2 align_center" >
+                        <p class="p_margin">  
+                            <input  type="radio" name="service" id="" value="satisfied"><lable for="satisfied"></lable>
+                        </p>
+                 </div>
+                <div class="col-2 align_center" >
+                    <p class="p_margin">     
+                        <input  type="radio" name="service" id="" value="satisfied"><lable for="satisfied"></lable>
+                    </p>
+                </div>          
+            </div>
+            <div class="row row_margin row_color">
+                <div class="col-md-2 col-lg-2 col-sm-2 col_padding">
+                    <p class="p_margin">Company overall</p>
+                </div>
+                <div class="col-2 align_center" >
+                    <p class="p_margin">
+                        <input  type="radio" name="company" id="" value="very unsatisfied"><lable for="very unsatisfied"></lable>
+                    </p>
+                </div>
+                <div class="col-2 align_center" >
+                    <p class="p_margin">
+                        <input  type="radio" name="company" id="" value="unsatisfied"><lable for=" unsatisfied"></lable>
+                    </p>
+                </div>
+                <div class="col-2 align_center" >
+                    <p class="p_margin">
+                        <input  type="radio" name="company" id="" value="normal"><lable for="normal"></lable>
+                    </p>
+                </div>
+                    <div class="col-2 align_center" >
+                        <p class="p_margin"> 
+                            <input  type="radio" name="company" id="" value="satisfied"><lable for="satisfied"></lable>
+                        </p>
+                </div>
+                <div class="col-2 align_center" >
+                    <p class="p_margin"> 
+                         <input  type="radio" name="company" id="" value="satisfied"><lable for="satisfied"></lable>
+                    </p>
+                 </div>          
+            </div>
+            
+            <div class="row top_margin" style="min-height: 60px;">
+                <div class="col-12"><p class="p_margin"><b>How satisfied you are?</b><span> *</span></p></div>
+                <div class="col-md-2 col-lg-2 col-sm-2"><p class="p_margin "></div>
+                <div class="col-2 align_center"><p class="p_margin ">Very Unlikely</p></div>
+                <div class="col-2 align_center"><p class="p_margin">Unlikely</p></div>
+                <div class="col-2 align_center"><p class="p_margin">Normal</p></div>
+                <div class="col-2 align_center"><p class="p_margin">Unlikely</p></div>
+                <div class="col-2 align_center"><p class="p_margin">very Likely</p></div>
+               
+            </div>
+            
+            <div class="row row_margin row_color" >
+                <div class="col-md-2 col-lg-2 col-sm-2 col_padding">
+                    <p class="p_margin">Buy from us again</p>
+                </div>
+                <div class="col-2 align_center" >
+                    <p class="p_margin">
+                        <input  type="radio" name="Buy" id="" value="very ununlikely"><lable for="very ununlikely"></lable>
+                    </p>
+                </div>
+                <div class="col-2 align_center" >
+                    <p class="p_margin">
+                        <input  type="radio" name="Buy" id="" value="unlikely"><lable for="unlikely"></lable>
+                    </p class="p_margin">
+                </div>
+                <div class="col-2 align_center" >
+                    <p class="p_margin">
+                        <input  type="radio" name="Buy" id="" value="normal"><lable for="normal"></lable>
+                    </p>
+                </div>
+                    <div class="col-2 align_center" >
+                        <p class="p_margin"> 
+                            <input  type="radio" name="Buy" id="" value="unlikely"><lable for="unlikely"></lable>
+                        </p>
+                    </div>
+                <div class="col-2 align_center" >
+                    <p class="p_margin"> 
+                        <input  type="radio" name="Buy" id="" value="very likely"><lable for="very likely"></lable>
+                    </p>
+                </div>          
+            </div>
+            <div class="row row_margin ">
+                <div class="col-md-2 col-lg-2 col-sm-2 col_padding">
+                    <p class="p_margin">Recommended our product to other</p>
+                </div>
+                <div class="col-2 align_center" >
+                    <p class="for_radio_center p_margin">
+                        <input type="radio" name="Recommendedproduct" id="" value="very ununlikely">
+                        <lable for="very ununlikely"></lable>
+                
+                    </p>
+                        </div>
+                <div class="col-2 align_center" >
+                    <p class="for_radio_center p_margin">
+                        <input  type="radio" name="Recommendedproduct" id="" value="unlikely">
+                        <lable for="unlikely"></lable>
+                    </p>
+                      </div>
+                <div class="col-2 align_center" >
+                    <p class="for_radio_center p_margin">
+                        <input  type="radio" name="Recommendedproduct" id="" value="normal">
+                        <lable for="normal"></lable>
+                   </p>
+                     </div>
+                <div class="col-2 align_center" >
+                    <p class="for_radio_center p_margin">
+                        <input  type="radio" name="Recommendedproduct" id="" value="unlikely">
+                        <lable for="unlikely"></lable>     
+                    </p>
+                 </div>
+                <div class="col-2 align_center" >
+                    <p class="for_radio_center p_margin">
+                        <input  type="radio" name="Recommendedproduct" id="" value="very likely">
+                        <lable for="very likely"></lable>
+                    </p>
+                </div>          
+            </div>
+            <div class="row row_margin row_color ">
+                <div class="col-md-2 col-lg-2 col-sm-2 col_padding" >
+                    <p class="p_margin">Recommended our company to other</p>
+                </div>
+                <div class="col-2 align_center "  >
+                        <p class="for_radio_center p_margin">
+                            <input  type="radio" name="Recommendedcompany" id="" value="very ununlikely">
+                            <lable for="very ununlikely"></lable>
+                        </p>
+                </div>
+                <div class="col-2 align_center " >
+                    <p class="for_radio_center p_margin">
+                        <input  type="radio" name="Recommendedcompany" id="" value="unlikely">
+                        <lable for="unlikely"></lable>
+                    </p>
+                </div>
+                <div class="col-2 align_center " >
+                    <p class="for_radio_center p_margin">
+                        <input   type="radio" name="Recommendedcompany" id="" value="normal">
+                        <lable for="normal"></lable>
+                    </p>
+                </div>
+                
+                <div class="col-2 align_center " >
+                        <p class="for_radio_center p_margin">
+                            <input  type="radio" name="Recommendedcompany" id="" value="unlikely">
+                            <lable for="unlikely"></lable>
+                        </p>
+                 </div>
+                <div class="col-2 align_center " >
+                    <p class="for_radio_center p_margin">
+                        <input  type="radio" name="Recommendedcompany" id="" value="very likely">
+                        <lable for="very likely"></lable>
+                    </p>
+                 </div> 
+            </div>  
+            <div class="row top_margin">
+                <div class="col-12">
+                    <p>
+                        <lable for="feedback"><b>Additional comments or suggestion</b></lable><br>
+                        <textarea class="form-control" id="feedback" name="feedback" cols="105" rows="6"></textarea>
+                    </p>
+                </div>
+                <div class="col-2">
+                   <button>Submit</button>
+                </div>
+            </div>
+            
+        </form>     
+        </div>
+    </div>
+    
+    
+   
+</body>
+</html>
